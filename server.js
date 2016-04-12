@@ -1,4 +1,5 @@
 var express = require('express');
+var $ = require("jquery");
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 
@@ -41,12 +42,22 @@ app.post('/items', jsonParser, function(req, res) {
 });
 
 app.delete('/items/:id', function(req, res) {
-    if (!':id') {
+    if (req.params.id == undefined || req.params.id == null) {
         return res.sendStatus(400);
     } else {
-        storage.items.splice(req.params.id, 1);
+        for (var i = 0; i < storage.items.length; i++) {
+            if (storage.items[i].id == req.params.id) {
+                storage.items.splice(i, 1);
+                break;
+            }
+        }
         res.json(true);
-        storage.id -= 1; //need a way to subtract 1 from all id's past the item being deleted, otherwise those "after" items won't delete
+    }
+});
+
+app.put('/items/:id', function(req, res) {
+    if (req.params.id == undefined || req.params.id == null) {
+        storage.add($('#item-input').val());
     }
 });
 
