@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "test": "mocha --watch server.js",
     "start": "node server.js",
     "push:master": "git push origin master",
     "pull:master": "git pull origin master",
@@ -20,7 +21,9 @@
     "url": "https://github.com/jstrother/shopping-list/issues"
   },
   "homepage": "https://github.com/jstrother/shopping-list#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "handlebars": "^4.0.5",
