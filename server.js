@@ -62,6 +62,7 @@ app.put('/items/:id', function(req, res) {
         for (var i = 0; i < storage.items.length; i++) {
             if (storage.items[i].id == req.params.id) {
                 storage.add($('#item-input').val());
+                break;
             }
         }
     }
