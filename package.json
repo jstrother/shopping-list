@@ -7,7 +7,6 @@
     "start": "node server.js",
     "push:master": "git push origin master",
     "pull:master": "git pull origin master",
-    "chk:master": "git checkout master",
     "add": "git add -A",
     "commit": "git commit -m"
   },
