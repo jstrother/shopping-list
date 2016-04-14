@@ -21,13 +21,10 @@
     "url": "https://github.com/jstrother/shopping-list/issues"
   },
   "homepage": "https://github.com/jstrother/shopping-list#readme",
-  "devDependencies": {
-    "jasmine": "^2.4.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "body-parser": "^1.15.0",
     "handlebars": "^4.0.5",
-    "express": "^4.13.4",
-    "jquery": "^2.2.3"
+    "express": "^4.13.4"
   }
 }

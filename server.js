@@ -1,5 +1,4 @@
 var express = require('express');
-var $ = require("jquery");
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 
