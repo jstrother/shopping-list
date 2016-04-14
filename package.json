@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run server",
-    "server": "nodemon server.js",
+    "start": "node server.js",
     "push:master": "git push origin master",
     "pull:master": "git pull origin master",
     "chk:master": "git checkout master",
@@ -27,7 +26,9 @@
     "express": "^4.13.4",
     "handlebars": "^4.0.5",
     "jasmine": "^2.4.1",
-    "jquery": "^2.2.3",
-    "nodemon": "^1.9.1"
+    "jquery": "^2.2.3"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
   }
 }
