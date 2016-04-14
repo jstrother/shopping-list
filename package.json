@@ -22,11 +22,14 @@
   },
   "homepage": "https://github.com/jstrother/shopping-list#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
     "mocha": "^2.4.5"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
+    "express": "^4.13.4",
     "handlebars": "^4.0.5",
-    "express": "^4.13.4"
+    "jquery": "^2.2.3"
   }
 }

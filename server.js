@@ -1,4 +1,5 @@
 var express = require('express');
+var $ = require("jquery");
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 
@@ -56,7 +57,13 @@ app.delete('/items/:id', function(req, res) {
 
 app.put('/items/:id', function(req, res) {
     if (req.params.id == undefined || req.params.id == null) {
-        storage.add($('#item-input').val());
+        return res.sendStatus(400);
+    } else {
+        for (var i = 0; i < storage.items.length; i++) {
+            if (storage.items[i].id == req.params.id) {
+                storage.add($('#item-input').val());
+            }
+        }
     }
 });
 
