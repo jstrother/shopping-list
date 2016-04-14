@@ -22,13 +22,12 @@
   },
   "homepage": "https://github.com/jstrother/shopping-list#readme",
   "devDependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
-    "handlebars": "^4.0.5",
-    "jasmine": "^2.4.1",
-    "jquery": "^2.2.3"
+    "jasmine": "^2.4.1"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "handlebars": "^4.0.5",
+    "express": "^4.13.4",
+    "jquery": "^2.2.3"
   }
 }
