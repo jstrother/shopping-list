@@ -54,9 +54,9 @@ describe('Shopping List', function() {
                 done();
             });
     });
-    it('should edit an item on put');
+    it('should edit an item on PUT');
     it('should return an error if there is nothing to edit');
-    it('should delete an item on delete');
+    it('should reemove an item on DELETE');
     it('should return an error if there is nothing to remove');
 });
 
