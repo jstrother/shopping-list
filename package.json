@@ -12,7 +12,7 @@
     "mongo": "npm run mongo:echo && npm run mongo:chmod && npm run mongo:run",
     "push:hero": "git push heroku master",
     "push:master": "git push origin master",
-    "push": "npm run push:hero & npm run push:master",
+    "push": "npm run push:hero && npm run push:master",
     "add": "git add --all",
     "commit": "git commit -a -m"
   },
