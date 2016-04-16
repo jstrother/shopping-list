@@ -1,0 +1,11 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "snippets.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jim Strother",
+  "license": "ISC"
+}
