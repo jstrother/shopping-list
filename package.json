@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "mocha --watch server.js",
+    "test": "mocha",
     "start": "node server.js",
     "push:master": "git push origin master",
     "pull:master": "git pull origin master",
@@ -29,7 +29,6 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "handlebars": "^4.0.5",
     "jquery": "^2.2.3"
   }
 }

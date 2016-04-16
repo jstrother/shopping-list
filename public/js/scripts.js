@@ -4,7 +4,7 @@ var ShoppingList = function() {
     this.itemListTemplate = Handlebars.compile($("#item-list-template").html());
     this.input = $('#item-input');
     this.input.keydown(this.onAddInputKeydown.bind(this));
-    this.main = $('#main');
+    this.main = $('main');
     this.main.on('dblclick', 'li',
                  this.onEditItemClicked.bind(this));
     this.main.on('keydown', 'li input',
