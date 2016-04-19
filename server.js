@@ -1,5 +1,4 @@
 var express = require('express');
-var $ = require("jquery");
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 
@@ -19,6 +18,15 @@ Storage.prototype.delete = function(name) {
     var item = {name: name, id: this.id};
     this.items.delete(item);
     this.id -= 1;
+};
+
+Storage.prototype.update = function(name, id) {
+    this.items.forEach(function(item) {
+        if (item.id == id) {
+            item.name = name;
+        }
+    });
+    
 };
 
 var storage = new Storage();
@@ -59,13 +67,20 @@ app.put('/items/:id', function(req, res) {
     if (req.params.id == undefined || req.params.id == null) {
         return res.sendStatus(400);
     } else {
-        for (var i = 0; i < storage.items.length; i++) {
-            if (storage.items[i].id == req.params.id) {
-                storage.add($('#item-input').val());
-                break;
-            }
-        }
+        storage.items.forEach(function(item) {
+            if (item.id == req.params.id) {
+                console.log(req.body);
+                // storage.update(req.body.name, req.params.id);
+                storage.update(storage.items[req.params.id].name, req.params.id);
+            }    
+        });
+        res.json(storage.items[req.params.id]);
     }
 });
 
 app.listen(process.env.PORT || 8080);
+
+exports.app = app;
+exports.storage = storage;
+
+

@@ -1,0 +1,1 @@
+mongoose --bind_ip=$IP --dbpath=/home/ubuntu/workspace/mongo_data --nojournal --rest "$@"
