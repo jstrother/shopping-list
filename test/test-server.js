@@ -67,14 +67,9 @@ describe('Shopping List', function() {
                 res.body.should.have.property('id');
                 res.body.name.should.be.a('string');
                 res.body.id.should.be.a('number');
+                res.body.id.should.equal(0);
                 res.body.name.should.equal('Black beans');
                 storage.items.should.be.a('array');
-                storage.items.should.have.length(4);
-                storage.items[0].should.be.a('object');
-                storage.items[0].should.have.property('id');
-                storage.items[0].should.have.property('name');
-                storage.items[0].id.should.be.a('number');
-                storage.items[0].name.should.be.a('string');
                 storage.items[0].name.should.equal('Black beans');
                 done();
             });

@@ -21,6 +21,7 @@ Storage.prototype.delete = function(name) {
 };
 
 Storage.prototype.update = function(name, id) {
+    console.log('updating: ', name, id);
     this.items.forEach(function(item) {
         if (item.id == id) {
             item.name = name;
@@ -36,6 +37,7 @@ storage.add('Peppers');
 
 var app = express();
 app.use(express.static('public'));
+app.use(jsonParser);
 
 app.get('/items', function(req, res) {
     res.json(storage.items);
@@ -69,9 +71,7 @@ app.put('/items/:id', function(req, res) {
     } else {
         storage.items.forEach(function(item) {
             if (item.id == req.params.id) {
-                console.log(req.body);
-                // storage.update(req.body.name, req.params.id);
-                storage.update(storage.items[req.params.id].name, req.params.id);
+                storage.update(req.body.name, req.params.id);
             }    
         });
         res.json(storage.items[req.params.id]);
