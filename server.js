@@ -21,7 +21,6 @@ Storage.prototype.delete = function(name) {
 };
 
 Storage.prototype.update = function(name, id) {
-    console.log('updating: ', name, id);
     this.items.forEach(function(item) {
         if (item.id == id) {
             item.name = name;
