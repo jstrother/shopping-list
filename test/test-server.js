@@ -75,7 +75,26 @@ describe('Shopping List', function() {
             });
     });
     it('should return an error if there is nothing to edit');
-    it('should remove an item on DELETE');
+    it('should remove an item on DELETE', function(done) {
+        chai.request(app)
+            .delete('/items/0')
+            .remove({'name': 'Black beans'})
+            .end(function(err, res) {
+                should.equal(err, null);
+                res.should.have.status(200);
+                res.should.be.json;
+                res.body.should.be.a('object');
+                res.body.should.have.property('name');
+                res.body.should.have.property('id');
+                res.body.name.should.be.a('string');
+                res.body.id.should.be.a('number');
+                res.body.id.should.equal(0);
+                res.body.name.should.equal('Black beans');
+                storage.items.should.be.a('array');
+                storage.items[0].name.should.equal('Black beans');
+                done();
+            });
+    });
     it('should return an error if there is nothing to remove');
 });
 
