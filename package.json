@@ -9,7 +9,7 @@
     "build": "browserify public/js/*.js -o public/js/scripts.js",
     "mongo:echo": "echo 'mongod --bind_ip=$IP --dbpath=/home/ubuntu/workspace/mongo_data --nojournal --rest \"$@\"' > run_mongod",
     "mongo:chmod": "chmod a+x run_mongod",
-    "mongo:run": "./run_mongod",
+    "mongo:run": "run_mongod",
     "mongo": "npm run mongo:echo && npm run mongo:chmod && npm run mongo:run",
     "goose:echo": "echo 'mongoose --bind_ip=$IP --dbpath=/home/ubuntu/workspace/mongo_data --nojournal --rest \"$@\"' > run_mongoose",
     "goose:chmod": "chmod a+x run_mongoose",

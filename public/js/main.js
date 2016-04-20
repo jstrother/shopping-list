@@ -1,3 +1,4 @@
+// this file gets browserified together with the requires to serve one JS file
 var $ = require("jquery");
 var Handlebars = require("handlebars");
 
