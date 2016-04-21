@@ -74,7 +74,26 @@ describe('Shopping List', function() {
                 done();
             });
     });
-    it('should return an error if there is nothing to edit');
+    it('should return an error if there is nothing to edit', function(done) {
+        chai.request(app)
+        .put('/items/4')
+        .send({'name': 'Green Beans'})
+        .end(function(err, res) {
+            should.equal(err, null);
+            res.should.have.status(200);
+            res.should.be.json;
+            res.body.should.be.a('object');
+            res.body.should.have.property('name');
+            res.body.should.have.property('id');
+            res.body.name.should.be.a('string');
+            res.body.id.should.be.a('number');
+            res.body.id.should.equal(4);
+            res.body.name.should.equal('Green Beans');
+            storage.items.should.be.a('array');
+            storage.items[4].name.should.equal('Green Beans');
+            done();
+        });
+    });
     it('should remove an item on DELETE', function(done) {
         chai.request(app)
             .delete('/items/0')
@@ -82,19 +101,24 @@ describe('Shopping List', function() {
                 should.equal(err, null);
                 res.should.have.status(200);
                 res.should.be.json;
-                res.body.should.not.be.a('object');
-                // res.body.should.have.property('name');
-                // res.body.should.have.property('id');
-                // res.body.name.should.be.a('string');
-                // res.body.id.should.be.a('number');
-                // res.body.id.should.equal(0);
-                // res.body.name.should.not.equal('Black beans');
+                res.body.should.be.a('object');
                 storage.items.should.be.a('array');
                 storage.items[0].name.should.not.equal('Black beans');
                 done();
             });
     });
-    it('should return an error if there is nothing to remove');
+    it('should return an error if there is nothing to remove', function(done) {
+        chai.request(app)
+        .delete('/items/6')
+        .end(function(err, res) {
+            should.equal(err.status, 400);
+            res.should.have.status(400);
+            res.should.be.json;
+            res.body.should.be.a('object');
+            res.body.error.should.equal('That item could not be found.');
+            done();
+        });
+    });
 });
 
 exports.app = app;

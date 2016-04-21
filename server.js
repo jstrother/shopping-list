@@ -51,13 +51,14 @@ app.post('/items', jsonParser, function(req, res) {
 });
 
 app.delete('/items/:id', function(req, res) {
-    if (req.params.id == undefined || req.params.id == null) {
-        return res.sendStatus(400);
+    if (req.params.id == undefined || req.params.id == null || req.params.id > storage.items.length) {
+        var errorMessage = {"error": "That item could not be found."};
+        return res.status(400).json(errorMessage);
     } else {
         for (var i = 0; i < storage.items.length; i++) {
             if (storage.items[i].id == req.params.id) {
-                storage.items.splice(i, 1);
-                break;
+                var deletedItem = storage.items.splice(i, 1);
+                return res.json(deletedItem[0]);
             }
         }
         res.json(true);
@@ -68,11 +69,16 @@ app.put('/items/:id', function(req, res) {
     if (req.params.id == undefined || req.params.id == null) {
         return res.sendStatus(400);
     } else {
+        var counter = false;
         storage.items.forEach(function(item) {
             if (item.id == req.params.id) {
                 storage.update(req.body.name, req.params.id);
-            }    
+                counter = true;
+            } 
         });
+        if (!counter) {
+            storage.add(req.body.name);
+        }
         res.json(storage.items[req.params.id]);
     }
 });
