@@ -7,14 +7,10 @@
     "test": "mocha",
     "start": "nodemon server.js",
     "build": "browserify public/js/*.js -o public/js/scripts.js",
-    "mongo:echo": "echo 'mongod --bind_ip=$IP --dbpath=/home/ubuntu/workspace/mongo_data --nojournal --rest \"$@\"' > run_mongod",
+    "mongo:echo": "echo 'mongod --bind_ip=$IP --dbpath=~/Projects/shopping-list/mongo_data --nojournal --rest \"$@\"' > run_mongod",
     "mongo:chmod": "chmod a+x run_mongod",
     "mongo:run": "./run_mongod",
     "mongo": "npm run mongo:echo && npm run mongo:chmod && npm run mongo:run",
-    "goose:echo": "echo 'mongoose --bind_ip=$IP --dbpath=/home/ubuntu/workspace/mongo_data --nojournal --rest \"$@\"' > run_mongoose",
-    "goose:chmod": "chmod a+x run_mongoose",
-    "goose:run": "./run_mongoose",
-    "goose": "npm run goose:echo && npm run goose:chmod && npm run goose:run",
     "push:hero": "git push heroku master",
     "push:master": "git push origin master",
     "push": "npm run push:master && npm run push:hero",
@@ -43,6 +39,7 @@
     "express": "^4.13.4",
     "handlebars": "^4.0.5",
     "jquery": "^2.2.3",
+    "mongodb": "^2.1.18",
     "unirest": "^0.4.2"
   }
 }

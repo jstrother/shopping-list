@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"link",
+				"linkColor"
+			],
+			[
+				"bord",
+				"borderBottom"
+			],
+			[
+				"act",
+				"activeColor"
+			],
+			[
+				"hover",
+				"hoverColor"
+			],
+			[
+				"body",
+				"bodyColor"
+			],
+			[
+				"bo",
+				"body-color"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"key",
+				"keys"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"SassBeautify: Convert from SCSS to current type"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"npm -v"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jim/Projects/shopping-list/package.json",
+		"/C/Users/Jim/.bash_profile",
+		"/C/Users/Jim/.bashrc",
+		"/C/Users/Jim/AppData/Local/Temp/Temp1_jasmine-standalone-2.4.1.zip/lib/jasmine-2.4.1/jasmine.css",
+		"/C/Users/Jim/Desktop/Projects/Requirements/Boilerplate/js/main.js",
+		"/C/Users/Jim/Desktop/Projects/ECMAScript 2015/js/scripts.js",
+		"/C/Users/Jim/Desktop/Projects/ECMAScript 2015/index.html",
+		"/C/Users/Jim/Desktop/Projects/ECMAScript 2015/css/main.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/Boilerplate/js/plugins.js",
+		"/C/Users/Jim/Desktop/Projects/ECMAScript 2015/css/_myVariabels.scss",
+		"/C/Users/Jim/Desktop/Projects/ECMAScript 2015/css/_myVariabels.css.map",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/PRIMARY/normalize.css",
+		"/C/Users/Jim/Desktop/Slack O Auth",
+		"/C/Users/Jim/Desktop/Projects/gruntPractice/package.json",
+		"/C/Users/Jim/Desktop/Projects/grunt/gruntfile.js",
+		"/C/Users/Jim/Desktop/Projects/grunt/main.scss",
+		"/C/Users/Jim/Desktop/Projects/grunt/package.json",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/normalize.css",
+		"/C/Users/Jim/Desktop/Projects/index.html",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_tables.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_buttons.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_forms.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_grid-settings.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_lists.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_typography.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_base.scss",
+		"/C/Users/Jim/Desktop/Projects/Requirements/CSS-SASS/bitters/_variables.scss",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/Thinkful-DOM-master/index.html",
+		"/C/Users/Jim/Desktop/Projects/CSS - SASS Requirements/responsive webpage variables.txt",
+		"/C/Users/Jim/Desktop/Projects/responsive webpage variables.txt",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/index.html",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/main.scss",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/_variables.scss",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/README.md",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/Sass.sublime-settings",
+		"/C/Users/Jim/Desktop/Projects/CSS - SASS Requirements/normalize.css",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/main.css",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/main.css.map",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/scss/main.scss",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/styles.css",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/main.scss",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/main.scss",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/SassBeautify.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/startup-landing-page-clone/css/normalize.css",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/Jim/test.html",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/Jim/attempt.sass",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/Jim/style.css",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/SassBeautify/SassBeautify.sublime-settings",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Jim/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/first-site/test.html",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/first-site/about_me.txt",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/first-site/mystyle.css",
+		"/C/Users/Jim/Desktop/Thinkful/Projects/first-site/fresh_prince.html",
+		"/C/Users/Jim/Desktop/Thinkful Assignments/fresh_prince.html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 187.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
