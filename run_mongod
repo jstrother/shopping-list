@@ -1,1 +1,1 @@
-'mongod --bind_ip=$IP --dbpath=~/Projects/shopping-list/mongo_data --nojournal --rest "$@"' 
+mongod --bind_ip=$IP --dbpath=/c/Users/Jim/Projects/shopping-list/mongo_data --nojournal --rest "$@"

@@ -1,7 +1,6 @@
 {
   "name": "snippets",
   "version": "1.0.0",
-  "description": "",
   "main": "snippets.js",
   "scripts": {
     "test": "mocha"
@@ -9,6 +8,7 @@
   "author": "Jim Strother",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^2.1.16"
-  }
+    "mongodb": "^2.1.18"
+  },
+  "description": ""
 }
