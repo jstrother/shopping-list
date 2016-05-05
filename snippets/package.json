@@ -10,5 +10,6 @@
   "dependencies": {
     "mongodb": "^2.1.18"
   },
+  "devDependencies": {},
   "description": ""
 }
